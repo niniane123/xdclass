@@ -1,5 +1,5 @@
 # for var in sequence:
-#     do someting
+#     do something
 # else :
 #     do something
 #
