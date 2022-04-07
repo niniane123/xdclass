@@ -8,4 +8,6 @@ result = 0
 while i <= 100:
     result += i
     i += 1
+else:
+    print("i的值为%d,while循环推出" % i)
 print(result)
