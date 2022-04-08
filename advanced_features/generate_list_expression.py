@@ -19,3 +19,6 @@ print("this is list c:" + list_c.__str__())
 
 list_d = [[mem, elem] for mem in range(0, 10) for elem in range(0, 20)]
 print("this is list d:" + list_d.__str__())
+
+
+
