@@ -10,7 +10,7 @@ print(isinstance({"name": "zhangrenchao"}, Iterable))
 
 print(type({"name"}))
 
-# list中迭代的简便fangfa
+# list中迭代的简便方法
 list_b = [[1, 2], [2, 4], [6, 8, 89]]
 for ele, mem in list_b:
     print(ele + mem)
