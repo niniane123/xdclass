@@ -16,5 +16,5 @@ a, b, c = return_multiple_values1()
 print(a, b, c)
 # 单参数接收，随后迭代遍历
 result = return_multiple_values1()
-for i in result:
-    print(i)
+for ele in result:
+    print(ele)
