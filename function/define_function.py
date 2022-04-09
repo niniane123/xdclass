@@ -13,3 +13,6 @@ def calculate_area(radio):
 print(calculate_area(4))
 
 
+# TODO:先定义着，稍后实现函数功能
+def void_function(parameter):
+    pass
