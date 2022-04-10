@@ -33,3 +33,16 @@ def test(a):
 
 
 test(b)
+
+
+# 各种参数总结
+def person3(name, sex="male"):
+    print(name, sex)
+
+
+person3("zrc")
+
+
+# 不推荐这么用啊，很垃圾的代码，都都读不懂
+def person11(name, sex="male", *num, pet_name, **info_dict):
+    print(name, "sex is %s" % sex, num, pet_name, info_dict)
