@@ -1,6 +1,7 @@
 # map函数
-# map(fun, *iterables),将fuction作用到iterables上，并且作为一个新的iterablesfa返回
+# map(fun, *iterables),将function作用到iterables上，并且作为一个新的iterablesfa返回
 # iterables可以是一个也可以是多个
+# map函数经常和lamda表达式结合使用
 
 def add_one(x):
     return x + 1
