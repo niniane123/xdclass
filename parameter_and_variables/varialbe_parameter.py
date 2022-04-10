@@ -13,7 +13,7 @@ def my_fun(username_list):
 # TypeError: 'int' object is not iterable
 # print(my_fun(1))
 
-
+# python会将我们的可变长参数封装为元组类型
 def my_fun2(*username_list):
     print(type(username_list))
     result = 0
