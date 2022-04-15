@@ -5,5 +5,9 @@ import sys
 import math
 import datetime
 
-_all_ = ["test_a", "test_b"]
-print("hello world")
+# 是一个list,放在_init_.py中可以标志模糊导入的模块
+# 放在普通模块下，标识一个模块中那些属性允许被大搜如到其他模块中
+__all__ = ["test_a", "test_b"]
+
+# 导包的时候执行__init_ .py里的内容
+print("this is test package hello world")

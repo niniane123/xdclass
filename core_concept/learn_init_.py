@@ -9,9 +9,12 @@
 
 
 # 导入模块
-from core_concept.test import *
-# 导入包
-import test
+# import core_concept.module_test.test_c as test_c
+# import core_concept.module_test.test_d as test_d
+from core_concept.module_test import *
 
-# print(test_a.a)
-# print(test_b.b)
+# 导入包
+# import test
+# 注意是两个下划线，我就说怎么不对呢
+print(test_c.a)
+print(test_d.b)
