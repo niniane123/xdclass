@@ -15,6 +15,7 @@ class Person2():
 
 class Person3():
     # 自带self属性，在__init__()里面定义属性并且赋值，类相关的属性都放在__init__里面和Java不相同
+    # 另外我们也可以赋默认值，并不建议这么使用，在定义构造函数的时候尽量少去定义参数的默认值
     def __init__(self, name, age, height):
         self.name = name
         self.age = age
