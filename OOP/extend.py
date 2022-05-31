@@ -1,6 +1,6 @@
 # python中的继承
-
-class Animal():
+#
+class Animal:
     def __init__(self, name):
         print("在Animal中的构造方法完成初始化")
         self.name = name
