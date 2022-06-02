@@ -11,7 +11,8 @@ class Mother:
     def sing(self):
         print("mother is a good singer")
 
-#python支持多继承，注意多继承的写法
+
+# python支持多继承，注意多继承的写法
 class Me(Father, Mother):
     pass
 
@@ -20,3 +21,5 @@ me = Me()
 # 调用父类中的方法，当继承多个父类的时候，如果父类中有相同的方法，子类会有限使用先继承的父类中的方法
 me.sing()
 me.power()
+# [<class '__main__.Me'>, <class '__main__.Father'>, <class '__main__.Mother'>, <class 'object'>]
+print(Me.mro())
