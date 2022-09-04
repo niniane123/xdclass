@@ -57,3 +57,27 @@ prentice = Prentice()
 print(prentice.formula)
 # 运用[学校的煎饼果子配方]制作煎饼果子
 prentice.make_cake()
+
+
+# 子类重写父类同名方法和属性
+class Prentice2(School, Master):
+    def __init__(self):
+        self.formula = "独创配方"
+
+    def make_cake(self):
+        print(f"徒弟使用自己独创的配方制作蛋糕")
+
+
+# 子类重写父类同名方法和属性:如果子类和父类有同名的属性和方法子类创建对象调用属性和方法的时候调用的是子类里面的同名属性和方法
+prentice2 = Prentice2()
+# 独创配方
+print(prentice2.formula)
+# 徒弟使用自己独创的配方制作蛋糕
+prentice2.make_cake()
+
+# python中快速查看一个类的继承关系，以及父类的层级关系
+# (<class '__main__.Prentice2'>, <class '__main__.School'>, <class '__main__.Master'>, <class 'object'>)
+print(Prentice2.__mro__)
+
+# 子类调用父类的同名方法和属性 super关键字
+# 需求 我们也放希望能吃到父类做的蛋糕
