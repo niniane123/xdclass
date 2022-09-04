@@ -29,7 +29,7 @@ class Prentice(School, Master):
     def master_make_cake(self):
         # 再次初始化：这里想要调用父类的同名方法和属性，所以不能使用Prentice自己的属性，我们要
         # 使用master初始话花当前对象，因为Prentice是继承了Master的，所以Master有效？
-        # self就是一个形参用，习惯上用self关键字表示，表示调用该方法的对象本身，指向当前对象
+        # self就是一个形参用，习惯上用self关键字表示，表示调用该方法的对象本身，指向当前对象,便于理解
         Master.__init__(self)
 
         # 这里写上self的目的是为了接收将来调用这个方法的对象，self就是指代调用该方法的对象本身
