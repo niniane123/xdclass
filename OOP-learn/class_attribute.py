@@ -20,3 +20,18 @@ print(id(wangcai.tooth))
 print(id(wangcai.tooth))
 # 1804226462224
 print(id(wangcai.tooth))
+
+#########################修改类属性########################################################
+# 类属性只能通过类对象修改，不能通过实例对象修改，如果通过实例对象修改类属性，表示的是创建了一个和类属性同名的实例属性
+# 验证修改类属性 通过类对象来修改
+Dog.tooth = 100
+print(wangcai.tooth)
+print(xiaohei.tooth)
+
+# 验证通过实例对象去修改类属性 通过实例对象来修改
+# 这边其实是再wangcai对象中创建了一个同名叫做tooth的实例属性
+wangcai.tooth = 5000
+print(wangcai.tooth)
+# 说明Dog的类属性没有被修改成功
+print(xiaohei.tooth)
+print(Dog.tooth)
