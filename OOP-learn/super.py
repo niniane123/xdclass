@@ -35,6 +35,7 @@ class Prentice(School):
         # 再次初始化：这里想要调用父类的同名方法和属性，所以不能使用Prentice自己的属性，我们要
         # 使用master初始话花当前对象，因为Prentice是继承了Master的，所以Master有效？
         # self就是一个形参用，习惯上用self关键字表示，表示调用该方法的对象本身，指向当前对象,便于理解
+        # 其实只要不是通过类名去调用实例对象，那么一般都不用传self参数
         Master.__init__(self)
 
         # 这里写上self的目的是为了接收将来调用这个方法的对象，self就是指代调用该方法的对象本身
@@ -56,7 +57,9 @@ class Prentice(School):
 
     def school_super_make_cake(self):
         # 这边会自动初始化父类School的formula属性吗？ 这边不是要传递一个句柄吗？super(Prentice,self)自动得到一个对象，这个对象在调用的时候已经自动的传过去了?不需要我们自己在传了吗？
-        super(Prentice, self).__init__()
+        # super(Prentice, self).__init__()
+        # super()返回的是一个实例对象，那么__init__()方法 是能自动接收这个调用本身的对象的
+        super().__init__()
         super(Prentice, self).make_cake()
 
 
