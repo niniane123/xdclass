@@ -11,6 +11,13 @@ class Master(object):
     def make_cake(self):
         print(f"运用{self.formula}制作蛋__money糕")
 
+    # 对外提供访问和修改私有属性的方法
+    def get_money(self):
+        return self.__money
+
+    def set_money(self, money):
+        self.__money = money
+
     # 定义私有方法
     def __info_print(self):
         print(f"师父的钱为：{self.__money},师傅的配方为{self.formula}")
@@ -39,3 +46,7 @@ tu_sun = TuSun()
 print(tu_sun.money)
 # 如果是实例对象调用实例方法，实例方法中的self参数是不需要传递的，pyhton解释器能自动的得到是哪个对象再调用这个方法；也也就是说他自动的给self参数赋值
 tu_sun.info_print()
+
+# 获取和修改私有属性
+# 注意：私有属性和私有方法只能在类里面访问和修改
+# 约定：再puthon中一般定义函数名get_xx来获取私有属性，定义set_xxx来修改私有属性值；
