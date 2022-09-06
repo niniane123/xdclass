@@ -17,7 +17,4 @@ class Dog(object):
 
 dog = Dog()
 print(dog.get_tooth())
-
-
-
-
+print(Dog.get_tooth())
