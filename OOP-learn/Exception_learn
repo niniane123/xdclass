@@ -37,4 +37,16 @@
 异常finally
     finally表示的是无论是否异常都要执行的代码，例如关闭文件
 异常的传递
+
 自定义异常
+class 异常类类名(Exception)
+    代码
+
+    # 设置异常的抛出信息
+     def  __str__(self):
+        return ....
+ 抛出异常
+    raise 异常类名()
+
+ 捕获异常
+    except Exception
