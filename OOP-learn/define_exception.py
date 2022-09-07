@@ -35,7 +35,7 @@ def execute():
     except Exception as result:
         # 异常那边的返回信息result是魔法方法__str_()返回的
         print(f"发生异常{result},请重新输入密码!")
-        # 调用本身重新输入密码
+        # 调用本身重新输入密码 递归调用
         execute()
     else:
         print(f"密码输入完成，并且密码为{pwd}")
