@@ -8,5 +8,8 @@ print(type(tuple_a))
 print(tuple_a.__getitem__(3))
 print(tuple_a[1:3])
 
+import python_package_learn.test_moudule
 
-
+python_package_learn.test_moudule.test()
+from python_package_learn import *
+test_moudule.test()
