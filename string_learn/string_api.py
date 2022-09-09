@@ -41,3 +41,72 @@ print(my_str.count("ands", 15, 30))
 print("============")
 print(my_str.rfind("and", 12, 50))
 
+""""
+    字符串的修改操作
+    replace()
+        替换作用
+        语法：字符串序列.replace(旧子串,新子串，替换次数)
+        替换次数：替换次数如果超过了旧子串的出现次数，表示替换所有的旧子串
+        注意：替换次数如果查出子串的出现次数，则替换为该子串的出现次数
+        
+        理解：调用了replace之后，发现了原有字符串的数据并没有受到修改，修改之后的数据是replace函数的返回值，这说明字符串数据类型是不可变的数据类型；
+        
+            
+    split() 
+        分割作用，返回又给列表list;
+        语法：字符串序列.split(分割字符，分割字符出现的次数)
+        注意：分割字符出现了n次那么将来返回的数据个数为n+1个
+    
+    
+    join()
+        连接作用：join()用一个字符或者子串合并字符串，即将多个字符串合并为一个新的字符串
+    语法；
+        字符或者子串.join(多字符串组成的序列)
+        表示用该字符或者子串来连接我们的字符序列
+   
+   capitalize()：将字符串第一个字符转换为大写
+   注意：capitalize()函数转换之后，只字符串第一个字符大写，其他的字符全部小写 
+   
+   title():将字符串每个单词首字母转换成大写
+   
+   lower():字符串中的大写转为小写
+   
+   upper()：将字符串中的小写转为大写
+    
+   
+        
+"""
+replaced_str = my_str.replace("and", "andsss")
+print(replaced_str)
+print(type(replaced_str))
+
+split_list = my_str.split("and")
+# ['hello world ', ' itcast ', ' itheima ', ' python']
+# 丢失分割字符
+print(split_list)
+print(type(split_list))
+
+my_str_split = my_str.split("and", 2)
+# ['hello world ', ' itcast ', ' itheima and python']
+print(my_str_split)
+
+str_list = ["aa", "bb", "cc"]
+print("=========")
+new_str = "...".join(str_list)
+print(new_str)
+
+# 字符串首字母大写
+print(my_str.capitalize())
+
+# 每个单词首字母大小
+print(my_str.title())
+
+# 小写转大写
+print(my_str.upper())
+
+print(my_str.lower())
+
+
+
+
+
