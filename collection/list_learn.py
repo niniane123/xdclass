@@ -104,3 +104,9 @@ print(num_list)
 test_list = ["a", "b", "c"]
 copied_test_list = test_list.copy()
 print(copied_test_list)
+
+import random
+
+# 列表嵌套[[],[],[]]，即大列表里里面包含了小列表；我们访问的顺序是从外向内访问
+# 用于生成一个指定范围内的整数。其中参数a是下限，参数b是上限，生成的随机数n：a<=n<=b
+random.randint(0, 2)
