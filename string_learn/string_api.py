@@ -170,3 +170,4 @@ print(my_str.isalnum())
 
 my_str3=""
 print(my_str3.isspace())
+
