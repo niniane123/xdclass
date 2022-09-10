@@ -72,9 +72,32 @@ print(my_str.rfind("and", 12, 50))
    lower():字符串中的大写转为小写
    
    upper()：将字符串中的小写转为大写
-    
    
+   lstrip()删除左侧空白字符串
+   
+   rstrip()删除右侧的空白字符串
+   
+   strip()删除空白字符串
+   
+   字符串对齐：
+        ljust() 方法的基本格式如下：
+        S.ljust(width[, fillchar])
         
+        其中各个参数的含义如下：
+        S：表示要进行填充的字符串；
+        width：表示包括 S 本身长度在内，字符串要占的总长度；
+        fillchar：作为可选参数，用来指定填充字符串时所用的字符，默认情况使用空格。
+
+    
+        Python rjust()方法
+            rjust() 和 ljust() 方法类似，唯一的不同在于，rjust() 方法是向字符串的左侧填充指定字符，从而达到右对齐文本的目的。
+            rjust() 方法的基本格式如下：
+            S.rjust(width, fillchar])
+        
+        Python center()方法
+            center() 字符串方法与 ljust() 和 rjust() 的用法类似，但它让文本居中，而不是左对齐或右对齐。
+            center() 方法的基本格式如下：
+            S.center(width[, fillchar])
 """
 replaced_str = my_str.replace("and", "andsss")
 print(replaced_str)
@@ -105,8 +128,3 @@ print(my_str.title())
 print(my_str.upper())
 
 print(my_str.lower())
-
-
-
-
-
