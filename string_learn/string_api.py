@@ -128,3 +128,45 @@ print(my_str.title())
 print(my_str.upper())
 
 print(my_str.lower())
+
+"""
+    判断操作:
+        所谓判断即为判断真假，返回的结果为布尔类型True或者False
+         startswith()
+            子串.startswith(子串，开始位置下标，结束位置下标)
+            如果不指定开始位置下标和结束位置下标，那么就是指代的整个字符串
+            
+        endswith()
+            endswith() 方法用于检索字符串是否以指定字符串结尾，如果是则返回 True；反之则返回 False。该方法的语法格式如下：
+            str.endswith(sub,start,end)
+            str：表示原字符串；
+            sub：表示要检索的字符串；
+            start：指定检索开始时的起始位置索引（字符串第一个字符对应的索引值为 0），如果不指定，默认从头开始检索。
+            end：指定检索的结束位置索引，如果不指定，默认一直检索到结束。
+
+        isalpha():
+            如果字符串中至少有一个字符并且所有的字符都是字母则返回True;否则返回False
+        
+        isalnum():
+            表示字符串是否是数字和字母的组合
+        
+        isspace():
+            
+            
+                
+        
+"""
+print(my_str.startswith("hello"))
+# False
+print(my_str.isalpha())
+
+# False
+print(my_str.isdigit())
+
+digit_str = "123"
+print(digit_str.isdigit())
+# False
+print(my_str.isalnum())
+
+my_str3=""
+print(my_str3.isspace())
