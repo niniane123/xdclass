@@ -31,6 +31,17 @@
         remove():移除列表中某个数据的第一个匹配项
             list.remove(element)
 
+    修改数据
+        修改指定位置的数据 list[index]=new_value
+        反转序列 reverse()
+        排序 :list.sort(key=None,reverse=False) reverse表示排序规则，reverse=True表示降序排序，reverse=False表示升序排序
+
+    复制数据
+        copy():list.copy()
+
+
+
+
 """
 name_list = ["tom", "helen", "nancy"]
 print(name_list)
@@ -80,3 +91,16 @@ print(f"removed element is {removed_element}")
 # clear()表示清空列表 最终保留的就是一个空列表，里面的数据元素都被删了
 name_list.clear()
 print(name_list)
+
+num_list = [1, 2, 3, 4, 5, 6, 7, 0, 2, -1, 34, 4, 2, 0, -533, 43]
+# [7, 6, 5, 4, 3, 2, 1]
+num_list.reverse()
+print(num_list)
+# 默认升序排序  reverse的值默认为False,即为升序排序；如果reverse=True则表示为降序排序
+num_list.sort(reverse=True)
+# [-533, -1, 0, 0, 1, 2, 2, 2, 3, 4, 4, 5, 6, 7, 34, 43]
+print(num_list)
+
+test_list = ["a", "b", "c"]
+copied_test_list = test_list.copy()
+print(copied_test_list)
