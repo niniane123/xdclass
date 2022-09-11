@@ -33,3 +33,16 @@ print(len(num_tuple))
 # 单个数据的元组写法一定要加逗号，不然不会识别为tuple类型
 # num_tuple2 = (10)
 # print(type(num_tuple2))
+
+
+# 元组里面元素的修改：尽可能不要去修改元组
+
+
+from list_learn import imported_variable
+
+imported_variable
+
+
+
+
+
